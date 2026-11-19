@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "HTML Slide Studio",
+  "version": "0.3.0",
+  "identifier": "com.slidestudio.editor",
+  "build": { "frontendDist": "resources/app/public" },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [],
+    "security": { "csp": null }
+  },
+  "bundle": {
+    "active": false,
+    "resources": ["resources/app/**/*", "resources/runtime/*"]
+  }
+}

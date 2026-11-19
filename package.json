@@ -1,0 +1,19 @@
+{
+  "name": "html-slide-studio",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "playwright test",
+    "test:all": "npm run test && npm run test:browser",
+    "tauri": "tauri",
+    "desktop:prepare": "node scripts/prepare-desktop.mjs",
+    "desktop:build": "node scripts/build-desktop.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1",
+    "@tauri-apps/cli": "2.12.6"
+  }
+}

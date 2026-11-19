@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>레이아웃·효과 QA</title>
+<style>
+:root { --ink:#19334b; --accent:#db6240; }
+*{box-sizing:border-box}body{margin:0;background:#e9edf3;font-family:Arial,sans-serif;color:var(--ink)}
+.deck{font-size:24px}.deck>.slide{width:1280px;height:720px;padding:60px;background:#fff;position:relative}
+.deck>.slide.grid-page{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-content:center}
+.deck h1{font-size:48px;grid-column:1/-1;margin:0 0 30px}.card{padding:25px;border:2px solid var(--accent);border-radius:16px;background:#fff4ed}
+.chart-page{background:#f7fbff!important}.chart-page h1{margin-top:0}.native{animation:appear .2s ease-out both}
+@keyframes appear{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@media print {.slide{break-after:page}}
+</style></head><body><main class="deck">
+<section class="slide grid-page" id="layout-slide"><h1>부모 스타일을 유지하는 미리보기</h1><div class="card" id="layout-left">왼쪽 카드<br>수치 42.5%</div><div class="card" id="layout-right">오른쪽 카드<br>한글과 English</div></section>
+<section class="slide chart-page" id="chart-slide"><h1>그래프와 기존 애니메이션</h1><p class="native" id="native-caption">0.2초 등장 효과</p>
+<svg id="qa-chart" width="1000" height="400" viewBox="0 0 1000 400" aria-label="검증 그래프"><g id="chart-axes" fill="none" stroke="#19334b" stroke-width="3"><path d="M90 40V340H950"/></g><g fill="#19334b" font-size="24"><text x="25" y="345">0</text><text x="20" y="100">100</text><text x="180" y="380">A</text><text x="440" y="380">B</text><text x="700" y="380">C</text></g><g id="chart-bars" fill="#db6240"><rect id="bar-a" x="150" y="200" width="100" height="140"/><rect id="bar-b" x="410" y="120" width="100" height="220"/><rect id="bar-c" x="670" y="60" width="100" height="280"/></g></svg>
+</section></main></body></html>

@@ -1,0 +1,17 @@
+﻿node_modules/
+target/
+src-tauri/target/
+.env
+.env.*
+!.env.example
+.state/
+artifacts/
+playwright-report/
+test-results/
+*.log
+*.p12
+*.pfx
+*.pem
+
+src-tauri/resources/
+src-tauri/gen/

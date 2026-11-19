@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Context CSS fixture</title>
+<style>
+body.themed .deck > .slide { background: rgb(10, 20, 30); color: white; }
+.deck > .slide:nth-child(2) h1 { color: rgb(255, 0, 0); }
+.deck .slide h1 { margin: 0; font-size: 48px; }
+.deck .slide { width: 1280px; height: 720px; padding: 40px; box-sizing: border-box; }
+.deck .slide .bar { height: 30px; width: 400px; background: rgb(0, 128, 0); opacity: 0; animation: grow .5s forwards; }
+@keyframes grow { from { opacity: 0; } to { opacity: 1; } }
+</style></head><body class="themed"><div class="deck">
+<section class="slide"><h1>Alpha heading</h1><div class="bar"></div></section>
+<section class="slide"><h1>Beta heading</h1><div class="bar"></div></section>
+</div></body></html>

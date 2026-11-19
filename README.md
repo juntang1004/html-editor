@@ -1,4 +1,4 @@
-# HTML Slide Studio 0.3
+﻿# HTML Slide Studio 0.3
 
 Rust/Tauri Windows 앱과 HTML 슬라이드 편집기입니다. 기존 배포본을 보존한 별도 개발 저장소에서 구현했습니다. 네이티브 파일 작업은 Rust, 슬라이드 표현은 HTML/CSS/JavaScript, 기존 OpenAI API 처리는 동봉한 Node 사이드카가 담당합니다.
 

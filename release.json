@@ -1,0 +1,8 @@
+{
+  "runtime": "v24.19.0",
+  "app": "HTML Slide Studio",
+  "apiConfigurationIncluded": false,
+  "runtimeSha256": "3602F2BB1A10F2CBAB4C36886218A33C1AB3DB87290E73B033C46C77147D0237",
+  "platform": "Windows x64",
+  "version": "0.3.0-desktop"
+}
